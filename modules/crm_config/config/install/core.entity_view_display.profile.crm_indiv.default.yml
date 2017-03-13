@@ -7,6 +7,7 @@ dependencies:
     - field.field.profile.crm_indiv.crm_email
     - field.field.profile.crm_indiv.crm_gender
     - field.field.profile.crm_indiv.crm_name
+    - field.field.profile.crm_indiv.crm_phone
     - field.field.profile.crm_indiv.crm_photo
     - image.style.thumbnail
     - profile.type.crm_indiv
@@ -22,13 +23,13 @@ mode: default
 content:
   crm_address:
     type: address_default
-    weight: 3
+    weight: 6
     label: above
     settings: {  }
     third_party_settings: {  }
   crm_dob:
     type: datetime_default
-    weight: 5
+    weight: 3
     label: inline
     settings:
       timezone_override: ''
@@ -36,19 +37,26 @@ content:
     third_party_settings: {  }
   crm_email:
     type: basic_string
-    weight: 2
+    weight: 4
     label: inline
     settings: {  }
     third_party_settings: {  }
   crm_gender:
     type: list_default
-    weight: 4
+    weight: 2
     label: inline
     settings: {  }
     third_party_settings: {  }
   crm_name:
     type: string
     weight: 1
+    label: inline
+    settings:
+      link_to_entity: false
+    third_party_settings: {  }
+  crm_phone:
+    type: string
+    weight: 5
     label: inline
     settings:
       link_to_entity: false

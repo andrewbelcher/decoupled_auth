@@ -7,7 +7,9 @@ dependencies:
     - field.field.profile.crm_indiv.crm_email
     - field.field.profile.crm_indiv.crm_gender
     - field.field.profile.crm_indiv.crm_name
+    - field.field.profile.crm_indiv.crm_phone
     - field.field.profile.crm_indiv.crm_photo
+    - image.style.thumbnail
     - profile.type.crm_indiv
   module:
     - address
@@ -37,6 +39,7 @@ content:
     weight: 1
     settings:
       placeholder: ''
+      size: 60
     third_party_settings: {  }
   crm_gender:
     type: options_select
@@ -46,6 +49,13 @@ content:
   crm_name:
     type: string_textfield
     weight: 0
+    settings:
+      size: 60
+      placeholder: ''
+    third_party_settings: {  }
+  crm_phone:
+    type: string_textfield
+    weight: 6
     settings:
       size: 60
       placeholder: ''

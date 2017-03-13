@@ -6,6 +6,8 @@ dependencies:
     - field.field.profile.crm_org.crm_org_address
     - field.field.profile.crm_org.crm_org_email
     - field.field.profile.crm_org.crm_org_name
+    - field.field.profile.crm_org.crm_phone
+    - image.style.thumbnail
     - profile.type.crm_org
   module:
     - address
@@ -32,6 +34,7 @@ content:
     weight: 1
     settings:
       placeholder: ''
+      size: 60
     third_party_settings: {  }
     type: email_default
   crm_org_name:
@@ -41,4 +44,11 @@ content:
       placeholder: ''
     third_party_settings: {  }
     type: string_textfield
+  crm_phone:
+    type: string_textfield
+    weight: 4
+    settings:
+      size: 60
+      placeholder: ''
+    third_party_settings: {  }
 hidden: {  }
